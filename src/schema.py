@@ -37,6 +37,27 @@ class CreatePost(graphene.Mutation):
         return CreatePost(post=post)
 
 
+class CreateUser(graphene.Mutation):
+    class Arguments:
+        title = graphene.String(required=True)
+        body = graphene.String(required=True) 
+        username = graphene.String(required=True)
+
+
+    user = graphene.Field(lambda: UserObject)
+
+    def mutate(self, info, title, body, username):
+        user = User.query.filter_by(username=username).first()
+        user = User(title=title, body=body)
+
+        if user is not None:
+            user.author = user
+
+        db.session.add(user)
+        db.session.commit()
+        return CreateUser(user=user)
+
+
 class Mutation(graphene.ObjectType):
     create_post = CreatePost.Field()
 
