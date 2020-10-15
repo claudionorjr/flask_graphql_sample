@@ -11,7 +11,7 @@
 
 ### Linux
 Primeiro passo: 
-- criar um ambiente virtual
+- Criar um ambiente virtual
 `pip install virtualenv`
 `virtualenv .ambvir --python=python3.7`
 `source ambvir/bin/activate`
@@ -27,7 +27,7 @@ Quarto passo:
 
 ### Windowns
 Primeiro passo: 
-- criar um ambiente virtual:
+- Criar um ambiente virtual:
 `pip install virtualenv`
 `python -m venv .amvbir`
 `.amvbir\Scripts\Activate.bat`
@@ -47,9 +47,9 @@ Quarto passo:
 ### Rotas
 - Home `http://127.0.0.1:5000/`
 
-- Pagina do GraphQL `http://127.0.0.1:5000/graphql`
+- Página do GraphQL `http://127.0.0.1:5000/graphql`
 
-### Fazendo Query
+### Query
 ***Obs***: Assim que estiver na rota `/graphql` você poderá utilizar os payloads abaixo.
 
 * Query posts:
@@ -81,7 +81,7 @@ Quarto passo:
 }
 ```
 
-### Fazendo Mutation
+### Mutation
 * Mutation create user:
 ```python
 mutation {
@@ -115,9 +115,8 @@ mutation {
 - [GraphQl](https://graphql.org/)
 
 
-### Autor
+## Autor
 
  <img style="border-radius: 50%;" src="https://avatars2.githubusercontent.com/u/58224002?s=400&u=1fec547bef35180a813b16c19f84145bf31726ea&v=4" width="100px;" alt=""/>
- <br />
 
-[![Linkedin Badge](https://img.shields.io/badge/-Lucas-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://br.linkedin.com/in/claudionorsilva/)](https://br.linkedin.com/in/claudionorsilva)
+[![Linkedin Badge](https://img.shields.io/badge/-Claudionor-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://br.linkedin.com/in/claudionorsilva/)](https://br.linkedin.com/in/claudionorsilva)
