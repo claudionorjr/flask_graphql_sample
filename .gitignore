@@ -1,3 +1,4 @@
 .ambvir
 .env
-alldata
+__pycache__
+alldata.db
