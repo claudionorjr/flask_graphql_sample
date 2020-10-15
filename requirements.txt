@@ -1,0 +1,7 @@
+flask==1.1.2
+flask-graphql==2.0.1
+flask-migrate==2.5.3
+flask-sqlalchemy==2.4.4
+graphene==2.1.8
+graphene-sqlalchemy==2.3.0
+python-dotenv==0.8.2
