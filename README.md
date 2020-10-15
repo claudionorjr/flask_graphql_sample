@@ -85,7 +85,7 @@ Quarto passo:
 * Mutation create user:
 ```python
 mutation {
-  createUser(username:"johndoe"){
+  createUser(username:"Alex"){
     user{
       uuid
       username
@@ -96,7 +96,7 @@ mutation {
 * Mutation create post:
 ```python
 mutation {
-  createPost(username:"johndoe", title:"Hello 2", body:"Hello body 2"){
+  createPost(username:"Alex", title:"Aventuras", body:"Aquela aventura..."){
     post{
       title
       body
